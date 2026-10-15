@@ -16,7 +16,7 @@ npx http-server -p 5173
 2. The `CNAME` file already sets the custom domain `prabuddharajshrestha.com.np`.
 3. At your DNS provider, add:
    - `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `CNAME` record for `www` → `<your-github-username>.github.io`
+   - `CNAME` record for `www` → `prstha.github.io`
 4. Once DNS resolves, tick **Enforce HTTPS** in Settings → Pages.
 
 ## Editing content
