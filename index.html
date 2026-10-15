@@ -96,8 +96,76 @@
           </div>
         </div>
 
-        <div class="hero__card" aria-label="Current status">
-          <div class="board">
+        <div class="hero__card">
+          <div class="avatar" id="avatar" role="img" aria-label="Illustrated portrait of Prabuddha">
+            <span class="avatar__ring" aria-hidden="true"></span>
+            <svg class="avatar__svg" viewBox="20 24 160 160" aria-hidden="true">
+              <defs>
+                <clipPath id="avatarClip"><circle cx="100" cy="100" r="100"/></clipPath>
+                <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1f2a44"/><stop offset="1" stop-color="#121a2e"/>
+                </linearGradient>
+              </defs>
+              <g clip-path="url(#avatarClip)">
+                <g class="av-body">
+                  <!-- shoulders / shirt -->
+                  <path d="M22 210 C26 170 56 154 100 152 C144 154 174 170 178 210 Z" fill="url(#shirt)"/>
+                  <path d="M84 152 L100 176 L116 152 Z" fill="#e8ecf3"/>
+                  <path d="M84 152 L100 176 L92 182 L78 158 Z M116 152 L100 176 L108 182 L122 158 Z" fill="#2b3a5c"/>
+                  <!-- neck -->
+                  <path d="M86 122 L86 152 Q100 162 114 152 L114 122 Z" fill="#b5784f"/>
+                </g>
+                <g class="av-head">
+                  <!-- ears -->
+                  <ellipse cx="62" cy="98" rx="7" ry="11" fill="#c4875c"/>
+                  <ellipse cx="138" cy="98" rx="7" ry="11" fill="#c4875c"/>
+                  <!-- face -->
+                  <ellipse cx="100" cy="94" rx="38" ry="46" fill="#cf9367"/>
+                  <!-- short beard -->
+                  <path d="M62 88 L64 104 C66 127 82 142 100 143 C118 142 134 127 136 104 L138 88 C134 104 128 112 120 114 C112 109 88 109 80 114 C72 112 66 104 62 88 Z" fill="#2a1e19"/>
+                  <!-- mustache -->
+                  <path d="M84 115 C90 108 110 108 116 115 C110 113 104 114 100 116 C96 114 90 113 84 115 Z" fill="#1f1612"/>
+                  <!-- mouth -->
+                  <path class="av-mouth" d="M91 123 Q100 129 109 123" fill="none" stroke="#9b5a45" stroke-width="3" stroke-linecap="round"/>
+                  <!-- nose -->
+                  <path d="M100 93 L96 106 Q100 109 104 106" fill="none" stroke="#a96d47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- eyebrows -->
+                  <path d="M74 80 Q84 74 94 79" fill="none" stroke="#1b1311" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M106 79 Q116 74 126 80" fill="none" stroke="#1b1311" stroke-width="4" stroke-linecap="round"/>
+                  <!-- eyes (pupils follow the cursor) -->
+                  <g class="av-eyes">
+                    <ellipse cx="84" cy="92" rx="5" ry="4" fill="#fff"/>
+                    <ellipse cx="116" cy="92" rx="5" ry="4" fill="#fff"/>
+                    <g class="av-pupils">
+                      <circle cx="84" cy="92" r="2.8" fill="#1b1311"/>
+                      <circle cx="116" cy="92" r="2.8" fill="#1b1311"/>
+                    </g>
+                    <!-- eyelids for blinking -->
+                    <rect class="av-lid" x="76" y="85" width="16" height="9" fill="#cf9367"/>
+                    <rect class="av-lid" x="108" y="85" width="16" height="9" fill="#cf9367"/>
+                  </g>
+                  <!-- glasses -->
+                  <g class="av-glasses" fill="rgba(255,255,255,0.12)" stroke="#111827" stroke-width="3">
+                    <rect x="71" y="83" width="26" height="19" rx="6"/>
+                    <rect x="103" y="83" width="26" height="19" rx="6"/>
+                    <path d="M97 90 Q100 87 103 90" fill="none"/>
+                    <path d="M71 89 L61 87 M129 89 L139 87" fill="none" stroke-linecap="round"/>
+                  </g>
+                  <g class="av-glint" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity="0">
+                    <path d="M76 98 L83 87"/>
+                    <path d="M108 98 L115 87"/>
+                  </g>
+                  <!-- straight, side-parted hair -->
+                  <path d="M58 96 C52 60 70 38 102 38 C132 38 150 58 142 96 C140 80 136 70 130 64 C112 70 90 66 74 58 C68 66 62 78 58 96 Z" fill="#17110f"/>
+                  <path d="M74 58 C88 50 112 46 130 64 C120 52 100 46 86 48 C80 50 76 54 74 58 Z" fill="#2a201c"/>
+                  <path d="M80 52 C96 46 116 50 128 60 M88 46 C104 42 122 48 134 60" fill="none" stroke="#3a2d27" stroke-width="1.6" stroke-linecap="round"/>
+                </g>
+              </g>
+            </svg>
+            <span class="avatar__wave" aria-hidden="true">👋</span>
+          </div>
+
+          <div class="board" aria-label="Current status">
             <div class="board__head">
               <span class="board__dots"><i></i><i></i><i></i></span>
               <span class="mono">sprint-board.live</span>

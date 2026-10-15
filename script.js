@@ -95,6 +95,20 @@
     setTimeout(tick, 2000);
   }
 
+  /* ---------- Avatar: eyes follow the cursor ---------- */
+  var avatar = document.getElementById('avatar');
+  var pupils = avatar.querySelector('.av-pupils');
+  if (!reduceMotion) {
+    window.addEventListener('pointermove', function (e) {
+      var r = avatar.getBoundingClientRect();
+      var dx = e.clientX - (r.left + r.width / 2);
+      var dy = e.clientY - (r.top + r.height * 0.46);
+      var dist = Math.hypot(dx, dy) || 1;
+      var k = Math.min(dist / 300, 1);
+      pupils.style.transform = 'translate(' + (dx / dist) * 2 * k + 'px,' + (dy / dist) * 1.4 * k + 'px)';
+    }, { passive: true });
+  }
+
   /* ---------- Counters ---------- */
   var counters = document.querySelectorAll('[data-count]');
   function runCounter(el) {
