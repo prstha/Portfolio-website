@@ -21,4 +21,4 @@ npx http-server -p 5173
 
 ## Editing content
 
-All content lives in `index.html`. The "Approach" steps are in `script.js` (`phases`).
+All content lives in `index.html`. The "A sprint with me" day texts are in `script.js` (`days`).
