@@ -41,10 +41,10 @@
   /* A sprint with me */
   var days = [
     ['Sprint planning.', 'We agree on what goes in, who owns it and what "done" means. Then I make sure Jira agrees too: tickets entered, prioritized, with clear acceptance criteria.'],
-    ['Stand-up, then unblock.', 'Fifteen minutes, not forty. Blockers get an owner and a date, not just sympathy. The rest of the day goes to clearing the path for Engineering, QA and Design.'],
-    ['Risk check.', 'Anything that could slip goes to management early, with options attached. Surprises are great for birthdays, not for delivery.'],
-    ['Backlog and stakeholders.', 'Re-prioritize when the world changes (it will). Gather requirements for what is next so the following sprint starts with a clear plan.'],
-    ['Report and retro.', 'One page of progress, KPIs, risks and upcoming milestones for stakeholders. Then a retro: what to keep, what to drop, what to try next.']
+    ['Stand-up, then unblock.', 'Fun fact: the stand-up was meant to keep meetings short, because standing too long gets uncomfortable. We use ours for updates, blockers and dependencies, and we still keep it short. The rest of the day goes to clearing the path for Engineering, QA and Design.'],
+    ['Say it out loud.', 'When messages go unanswered and updates stay in someone\'s head, the team assumes everything is on track. So risks go to management early, and updates get shared before anyone has to ask.'],
+    ['Backlog and stakeholders.', 'Requirements for what\'s next, so the following sprint starts with a clear plan. And when priorities shift, the backlog shifts with them, and everyone knows what changed.'],
+    ['Report, retro, and the 5 pm change.', 'A few reports that help people decide: progress, KPIs, risks, next milestones. Then the retro. And when a change arrives at 5 pm (it will), we pause, check the impact, reorder and tell the team. No panic mode.']
   ];
   var dayBtns = document.querySelectorAll('.day');
   var panel = document.querySelector('.week__panel');
